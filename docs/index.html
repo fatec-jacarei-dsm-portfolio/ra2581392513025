@@ -1,11 +1,248 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio - PEDRO HENRIQUE BERNARDO BARBOSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Henrique Barbosa - Desenvolvedor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Bem vindo ao Portfólio de PEDRO HENRIQUE BERNARDO BARBOSA</h1>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Pedro Barbosa</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Olá, eu sou <span class="highlight">Pedro Henrique</span>
+                </h1>
+                <h2 class="hero-subtitle">Desenvolvedor de Software Multiplataforma</h2>
+                <p class="hero-description">
+                    Estudante da FATEC-SP apaixonado por tecnologia, com foco em desenvolvimento web e 
+                    busca por soluções inovadoras.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#skills" class="btn btn-secondary">Ver Habilidades</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-element" style="--delay: 0s">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-element" style="--delay: 1s">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-element" style="--delay: 2s">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="floating-element" style="--delay: 3s">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Sou estudante da Faculdade de Tecnologia de São Paulo - FATEC-SP, cursando 
+                        Desenvolvimento de Software Multiplataforma. Tenho paixão por tecnologia e 
+                        acredito no poder do código como ferramenta de transformação.
+                    </p>
+                    <p>
+                        Estudo constantemente tecnologias como HTML, CSS, JavaScript, React, TypeScript 
+                        e Node.js. Acredito na aprendizagem contínua, colaboração e no código como 
+                        ferramenta de transformação.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jacareí, São Paulo, Brasil</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>FATEC-SP - Desenvolvimento de Software Multiplataforma</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <span>Português (Nativo), Inglês (Intermediário)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>1+</h3>
+                        <p>Anos de Estudo</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>10+</h3>
+                        <p>Tecnologias</p>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos Acadêmicos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ABP-1DSM</h3>
+                        <div class="project-links">
+                            <a href="https://prj-1sem-client.vercel.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/prjDevflow/prj_1sem_client" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h4>Sistema Web para Consulta de Horários Acadêmicos</h4>
+                        <p class="project-description">
+                            Desenvolvemos um sistema web para que a comunidade acadêmica possa consultar os horários das aulas de forma prática e atualizada. O projeto surgiu da necessidade de modernizar o processo de divulgação de horários, que tradicionalmente era feito através de murais físicos e e-mails.
+                        </p>
+                        <div class="project-problem">
+                            <h5>Problemática Identificada:</h5>
+                            <p>
+                                A cada semestre, as coordenações de curso e secretaria acadêmica montam os horários e alocam aulas nos ambientes da faculdade. Porém, a divulgação por murais impressos gerava retrabalho a cada alteração de horários, professores, disciplinas ou ambientes.
+                            </p>
+                        </div>
+                        <div class="project-solution">
+                            <h5>Solução Desenvolvida:</h5>
+                            <p>
+                                Sistema web que permite consulta de horários por curso, ambiente, turno (diurno e noturno) e turma, eliminando a necessidade de reimpressão de materiais e proporcionando acesso em tempo real às informações atualizadas.
+                            </p>
+                        </div>
+                        <div class="project-role">
+                            <span class="role-badge">DEV TEAM</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Banco de Dados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Ferramentas</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Scrum</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pedro Henrique Barbosa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
