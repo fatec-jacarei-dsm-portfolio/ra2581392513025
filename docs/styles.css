@@ -258,6 +258,29 @@ body {
     line-height: 1.7;
 }
 
+.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.info-item i {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    width: 1.5rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
 .about-stats {
     display: flex;
     flex-direction: column;
@@ -284,11 +307,31 @@ body {
     background: var(--bg-primary);
 }
 
+.projects-subtitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.projects-subtitle::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+    opacity: 0.4;
+}
+
 .projects-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 .project-card {
@@ -366,6 +409,14 @@ body {
     border-radius: 0.5rem;
     font-weight: 600;
     margin-top: 0.5rem;
+}
+
+.project-description code {
+    background: var(--bg-secondary);
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
+    font-size: 0.9em;
+    color: var(--primary-dark);
 }
 
 .project-tech {

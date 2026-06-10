@@ -85,18 +85,27 @@ window.addEventListener('scroll', () => {
 });
 
 
-function typeWriter(element, text, speed = 100) {
+function typeWriter(element, html, speed = 100) {
     let i = 0;
     element.innerHTML = '';
-    
+
     function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
+        if (i >= html.length) return;
+
+        if (html.charAt(i) === '<') {
+            // Insere a tag HTML inteira de uma vez, sem mostrar o texto cru
+            const tagEnd = html.indexOf('>', i);
+            element.innerHTML += html.slice(i, tagEnd + 1);
+            i = tagEnd + 1;
+            type();
+            return;
         }
+
+        element.innerHTML += html.charAt(i);
+        i++;
+        setTimeout(type, speed);
     }
-    
+
     type();
 }
 

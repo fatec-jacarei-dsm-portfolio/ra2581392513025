@@ -72,14 +72,17 @@
         <div class="about-text">
           <p>
             Sou estudante da Faculdade de Tecnologia de São Paulo - FATEC-SP,
-            cursando Desenvolvimento de Software Multiplataforma. Tenho paixão
-            por tecnologia e acredito no poder do código como ferramenta de
-            transformação.
+            cursando Desenvolvimento de Software Multiplataforma. Estou em busca
+            da minha primeira oportunidade — <strong>estágio ou posição júnior</strong>
+            — na área de Tecnologia da Informação, onde eu possa aplicar e
+            expandir meus conhecimentos em programação e análise de sistemas.
           </p>
           <p>
-            Estudo constantemente tecnologias como HTML, CSS, JavaScript,
-            React, TypeScript e Node.js. Acredito na aprendizagem contínua,
-            colaboração e no código como ferramenta de impacto.
+            Atuo no desenvolvimento web tanto no <strong>front-end</strong> quanto no
+            <strong>back-end</strong>, trabalhando com HTML, CSS, JavaScript, React,
+            TypeScript, Node.js, Python e bancos de dados (SQL e MongoDB). Acredito
+            na aprendizagem contínua, na colaboração e no código como ferramenta de
+            transformação e impacto.
           </p>
           <div class="about-info">
             <div class="info-item">
@@ -88,11 +91,15 @@
             </div>
             <div class="info-item">
               <i class="fas fa-graduation-cap"></i>
-              <span>FATEC-SP - Desenvolvimento de Software Multiplataforma</span>
+              <span>FATEC-SP - Desenvolvimento de Software Multiplataforma (cursando)</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-bullseye"></i>
+              <span>Em busca de Estágio / Posição Júnior em TI</span>
             </div>
             <div class="info-item">
               <i class="fas fa-language"></i>
-              <span>Português (Nativo), Inglês (Intermediário)</span>
+              <span>Português (Nativo), Inglês (Intermediário), Espanhol (Básico)</span>
             </div>
           </div>
         </div>
@@ -102,8 +109,12 @@
             <p>Anos de Estudo</p>
           </div>
           <div class="stat-card">
-            <h3>10+</h3>
+            <h3>15+</h3>
             <p>Tecnologias</p>
+          </div>
+          <div class="stat-card">
+            <h3>4</h3>
+            <p>Projetos Desenvolvidos</p>
           </div>
         </div>
       </div>
@@ -113,7 +124,9 @@
   <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="container">
-      <h2 class="section-title">Projetos Acadêmicos</h2>
+      <h2 class="section-title">Projetos</h2>
+
+      <h3 class="projects-subtitle">Projetos Acadêmicos</h3>
       <div class="projects-grid">
         <!-- Projeto 1: ABP 1DSM -->
         <div class="project-card">
@@ -225,6 +238,73 @@
           </div>
         </div>
       </div>
+
+      <h3 class="projects-subtitle">Projetos Pessoais</h3>
+      <div class="projects-grid">
+        <!-- Projeto Pessoal 1: WeatherApp -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>WeatherApp</h3>
+            <div class="project-links">
+              <a href="https://github.com/P3droGs/WheaterApp" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h4>Aplicação Web de Previsão do Tempo em Tempo Real</h4>
+            <p class="project-description">
+              Aplicação web que consulta dados climáticos em tempo real de qualquer
+              cidade, integrando-se à API do <strong>OpenWeatherMap</strong>. Desenvolvi
+              o back-end em <strong>TypeScript com Node.js e Express</strong>, criando a
+              rota de consulta <code>/weather?city={cidade}</code>, e o front-end com
+              HTML, CSS e JavaScript, exibindo temperatura, umidade e condições do clima.
+            </p>
+
+            <div class="project-tech">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">API REST</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto Pessoal 2: BarberPro -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>BarberPro</h3>
+            <div class="project-links">
+              <a href="https://github.com/P3droGs/ProjetoSistema" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h4>Sistema de Gestão para Barbearias</h4>
+            <p class="project-description">
+              Plataforma completa de gestão para barbearias, com <strong>CRUD</strong> de
+              barbeiros, clientes, serviços e agendamentos (com controle de status:
+              agendado, confirmado, concluído e cancelado). Construí o back-end em
+              <strong>Node.js, TypeScript e Express</strong> com banco de dados
+              <strong>PostgreSQL</strong>, validação de dados com <strong>Zod</strong> e
+              documentação interativa da API via <strong>Swagger (OpenAPI 3.0)</strong>.
+            </p>
+
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Zod</span>
+              <span class="tech-tag">Swagger</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -257,6 +337,10 @@
               <i class="fab fa-js-square"></i>
               <span>TypeScript</span>
             </div>
+            <div class="skill-item">
+              <i class="fas fa-bolt"></i>
+              <span>Vite</span>
+            </div>
           </div>
         </div>
 
@@ -269,8 +353,16 @@
               <span>Node.js</span>
             </div>
             <div class="skill-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
               <i class="fas fa-database"></i>
               <span>SQL</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-leaf"></i>
+              <span>MongoDB</span>
             </div>
             <div class="skill-item">
               <i class="fas fa-database"></i>
@@ -296,8 +388,31 @@
               <span>Git</span>
             </div>
             <div class="skill-item">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-item">
               <i class="fab fa-docker"></i>
               <span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pacote Office -->
+        <div class="skill-category">
+          <h3>Pacote Office</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fas fa-file-word"></i>
+              <span>Word</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-file-powerpoint"></i>
+              <span>PowerPoint</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-file-excel"></i>
+              <span>Excel</span>
             </div>
           </div>
         </div>
@@ -312,10 +427,16 @@
 
       <div class="extra-content">
         <h3>Formação Acadêmica</h3>
-        <p>📘 Desenvolvimento de Software Multiplataforma — FATEC-SP</p>
+        <p>📘 Desenvolvimento de Software Multiplataforma — FATEC-SP (cursando)</p>
+
+        <h3>Cursos &amp; Certificações</h3>
+        <p>🤖 Domine a IA com prompting responsável — Santander Open Academy (concluído em 05/2025)</p>
+
+        <h3>Soft Skills</h3>
+        <p>✅ Responsabilidade &nbsp;|&nbsp; 🚀 Proatividade &nbsp;|&nbsp; 🎯 Disciplina &nbsp;|&nbsp; 💪 Empenho &nbsp;|&nbsp; 🤝 Respeito</p>
 
         <h3>Hobbies</h3>
-        <p>🎮 Games | 🎵 Música | 💻 Projetos pessoais | 📚 Estudo contínuo</p>
+        <p>🎮 Games &nbsp;|&nbsp; 🎵 Música &nbsp;|&nbsp; 💻 Projetos pessoais &nbsp;|&nbsp; 📚 Estudo contínuo</p>
       </div>
     </div>
   </section>
@@ -343,6 +464,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
