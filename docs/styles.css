@@ -435,6 +435,108 @@ body {
 }
 
 
+/* Métricas do projeto */
+.project-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(130px, 100%), 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1.2rem 1rem;
+    background: var(--bg-secondary);
+    border-radius: 0.8rem;
+}
+
+.metric-item {
+    text-align: center;
+}
+
+.metric-value {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.metric-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Galeria de imagens do projeto */
+.project-media {
+    margin-top: 1.5rem;
+}
+
+.project-media h5 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-gallery.burndowns {
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+}
+
+.shot {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.shot-frame {
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 0.6rem;
+    box-shadow: var(--shadow-sm);
+    background: white;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.shot-frame img {
+    display: block;
+    width: 100%;
+}
+
+/* Recorta a barra do navegador e a barra de rolagem das capturas de tela */
+.shot-frame.is-browser img {
+    width: 101%;
+    margin-top: -6.2%;
+}
+
+/* Mantém os burndowns alinhados apesar das proporções diferentes */
+.project-gallery.burndowns .shot-frame {
+    aspect-ratio: 3 / 2;
+    padding: 0.4rem;
+}
+
+.project-gallery.burndowns .shot-frame img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.shot:hover .shot-frame {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.shot-caption {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+
 /* Skills */
 .skills {
     padding: 6rem 0;
@@ -651,6 +753,15 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
+    .project-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project-gallery,
+    .project-gallery.burndowns {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
     .profile-photo {
         width: 200px;
         height: 200px;
