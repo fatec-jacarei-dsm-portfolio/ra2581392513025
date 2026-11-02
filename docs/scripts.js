@@ -1,4 +1,8 @@
 
+// Ano do rodapé sempre atualizado
+document.getElementById('ano-atual').textContent = new Date().getFullYear();
+
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
