@@ -45,7 +45,7 @@
         </h2>
         <p class="hero-description">
           Estudante da FATEC Jacareí apaixonado por tecnologia, com foco em
-          desenvolvimento web e busca por soluções inovadoras.
+          desenvolvimento web e mobile e busca por soluções inovadoras.
         </p>
         <div class="hero-buttons">
           <a href="#projects" class="btn btn-primary">Ver Projetos</a>
@@ -74,8 +74,10 @@
           </p>
           <p>
             Atuo no desenvolvimento web tanto no <strong>front-end</strong> quanto no
-            <strong>back-end</strong>, trabalhando com HTML, CSS, JavaScript, React,
-            TypeScript, Node.js, Python e bancos de dados (SQL e MongoDB). Acredito
+            <strong>back-end</strong> e no desenvolvimento de <strong>apps mobile</strong>,
+            trabalhando com HTML, CSS, JavaScript, React, React Native (Expo),
+            TypeScript, Node.js, Python e bancos de dados (SQL e MongoDB), sempre com
+            testes automatizados. Acredito
             na aprendizagem contínua, na colaboração e no código como ferramenta de
             transformação e impacto.
           </p>
@@ -100,15 +102,15 @@
         </div>
         <div class="about-stats">
           <div class="stat-card">
-            <h3>1+</h3>
+            <h3>2</h3>
             <p>Anos de Estudo</p>
           </div>
           <div class="stat-card">
-            <h3>15+</h3>
+            <h3>20+</h3>
             <p>Tecnologias</p>
           </div>
           <div class="stat-card">
-            <h3>5</h3>
+            <h3>6</h3>
             <p>Projetos Desenvolvidos</p>
           </div>
         </div>
@@ -404,6 +406,134 @@
             </div>
           </div>
         </div>
+
+        <!-- Projeto 4: ABP-4DSM -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>ABP-4DSM</h3>
+            <div class="project-links">
+              <a href="https://github.com/prjDevflow/prj_4dsm" target="_blank" rel="noopener" class="project-link" title="Repositório no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h4>Passe — Controle de Acesso por QR Code e NFC</h4>
+
+            <p class="project-description">
+              Sistema de controle de acesso de baixo custo para edifícios e condomínios, formado por
+              um <strong>terminal IoT (ESP32)</strong> na catraca, uma <strong>API</strong> e um
+              <strong>app mobile</strong>. Neste projeto fui o <strong>desenvolvedor mobile</strong>:
+              construí o app "Passe" do zero em <strong>React Native com Expo e TypeScript</strong>,
+              transformando as 31 telas do protótipo no Figma em um app funcionando, integrado à API
+              e testado com o terminal real. Organizei o trabalho em 15 etapas (F01 a F15), cada uma
+              com PR, revisão e CI, desenvolvi com <strong>TDD</strong> (Jest, Testing Library e MSW)
+              e criei o pipeline do app no <strong>GitHub Actions</strong>.
+            </p>
+
+            <div class="project-problem">
+              <h5>Problemática Identificada:</h5>
+              <p>
+                Em prédios e condomínios, a entrada depende de porteiro, chave ou cartão físico, que se
+                perdem e são emprestados. Liberar um visitante por alguns dias exige combinar tudo à mão,
+                e quase não fica registro de quem entrou, quando e por onde.
+              </p>
+            </div>
+
+            <div class="project-solution">
+              <h5>Solução Desenvolvida:</h5>
+              <p>
+                A pessoa entra lendo com o celular o QR Code da catraca, que muda a cada 10 segundos,
+                ou aproximando uma tag NFC. A API confere autorização, período, horário, número de usos
+                e se o celular está a até 100 m do terminal, e manda a catraca abrir ou negar. No app,
+                o administrador cadastra pessoas, locais, terminais, tags e autorizações e consulta o
+                histórico de cada tentativa; o usuário vê as próprias autorizações e o que já usou.
+              </p>
+            </div>
+
+            <div class="project-role">
+              <span class="role-badge">DEV MOBILE</span>
+            </div>
+
+            <div class="project-contributions">
+              <h5>Minhas Contribuições:</h5>
+              <ul>
+                <li><strong>Fluxo de entrada:</strong> leitor de QR Code com a câmera, envio da posição e tela de resultado (autorizado ou negado, com o motivo).</li>
+                <li><strong>Administração:</strong> usuários, edifícios, pontos de acesso, terminais, autorizações (criar, consultar e cancelar), tags NFC e histórico com filtros.</li>
+                <li><strong>Arquitetura do app:</strong> rotas com Expo Router, camada de serviços com axios, cache com TanStack Query, sessão com JWT e formulários validados com Zod.</li>
+                <li><strong>Qualidade:</strong> mais de 1.000 testes automatizados, cerca de 96% das linhas cobertas, lint e checagem de tipos no CI a cada PR.</li>
+                <li><strong>Acessibilidade:</strong> fonte Atkinson Hyperlegible, contraste revisado, textos para leitor de tela e roteiro de teste com pessoas de 60 anos ou mais.</li>
+                <li><strong>Integração:</strong> ensaios com a API no Docker e com o ESP32 de verdade, e APK de teste gerado pelo EAS Build.</li>
+              </ul>
+            </div>
+
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-value">31</span>
+                <span class="metric-label">Telas no app</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">15</span>
+                <span class="metric-label">Etapas (F01–F15)</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">+1.000</span>
+                <span class="metric-label">Testes automatizados</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">+220</span>
+                <span class="metric-label">Meus commits</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">15</span>
+                <span class="metric-label">Pull requests</span>
+              </div>
+            </div>
+
+            <div class="project-media">
+              <h5>Telas do App</h5>
+              <div class="project-gallery">
+                <a href="./imagens/abp4dsm/fluxo-acesso.jpg" target="_blank" rel="noopener" class="shot">
+                  <div class="shot-frame">
+                    <img src="./imagens/abp4dsm/fluxo-acesso.jpg" alt="Três telas do app Passe: início do visitante com o botão Abrir catraca, acesso autorizado em verde e acesso negado em amarelo" loading="lazy" />
+                  </div>
+                  <span class="shot-caption">Entrada pela catraca — início, acesso autorizado e acesso negado</span>
+                </a>
+                <a href="./imagens/abp4dsm/administracao.jpg" target="_blank" rel="noopener" class="shot">
+                  <div class="shot-frame">
+                    <img src="./imagens/abp4dsm/administracao.jpg" alt="Três telas do app Passe: painel de administração, formulário de nova autorização e lista de usuários com filtros por perfil" loading="lazy" />
+                  </div>
+                  <span class="shot-caption">Administração — painel, nova autorização e usuários</span>
+                </a>
+                <a href="./imagens/abp4dsm/historico-nfc.jpg" target="_blank" rel="noopener" class="shot">
+                  <div class="shot-frame">
+                    <img src="./imagens/abp4dsm/historico-nfc.jpg" alt="Três telas do app Passe: histórico de tentativas com filtros, lista de tags NFC e minhas autorizações" loading="lazy" />
+                  </div>
+                  <span class="shot-caption">Histórico de acessos, tags NFC e minhas autorizações</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Expo</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">TanStack Query</span>
+              <span class="tech-tag">Zustand</span>
+              <span class="tech-tag">Zod</span>
+              <span class="tech-tag">Jest</span>
+              <span class="tech-tag">Testing Library</span>
+              <span class="tech-tag">MSW</span>
+              <span class="tech-tag">GitHub Actions</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">Figma</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <h3 class="projects-subtitle">Projetos Pessoais</h3>
@@ -500,7 +630,7 @@
       <div class="skills-grid">
         <!-- Frontend -->
         <div class="skill-category">
-          <h3>Frontend</h3>
+          <h3>Frontend &amp; Mobile</h3>
           <div class="skill-items">
             <div class="skill-item">
               <i class="fab fa-html5"></i>
@@ -525,6 +655,14 @@
             <div class="skill-item">
               <i class="fas fa-bolt"></i>
               <span>Vite</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-react"></i>
+              <span>React Native</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-mobile-screen-button"></i>
+              <span>Expo</span>
             </div>
           </div>
         </div>
@@ -551,7 +689,11 @@
             </div>
             <div class="skill-item">
               <i class="fas fa-database"></i>
-              <span>Banco de Dados</span>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>Prisma</span>
             </div>
           </div>
         </div>
@@ -579,6 +721,14 @@
             <div class="skill-item">
               <i class="fab fa-docker"></i>
               <span>Docker</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-gears"></i>
+              <span>GitHub Actions</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-vial"></i>
+              <span>Jest (TDD)</span>
             </div>
           </div>
         </div>
